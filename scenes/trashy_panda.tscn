@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://b17oauq5c21pc"]
+
+[ext_resource type="Script" path="res://TrashPanda.gd" id="1_k8bax"]
+[ext_resource type="Texture2D" uid="uid://lbejyuf8facu" path="res://sprites/panda1.png" id="2_5g08j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l88wo"]
+size = Vector2(96, 79)
+
+[node name="TrashyPanda" type="CharacterBody2D"]
+script = ExtResource("1_k8bax")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-9, -6.5)
+shape = SubResource("RectangleShape2D_l88wo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.256272, 0.266667)
+texture = ExtResource("2_5g08j")

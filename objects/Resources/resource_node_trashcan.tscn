@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://drdyeq2vu1ve7"]
+
+[ext_resource type="Texture2D" uid="uid://dkmum3vbn3myj" path="res://sprites/trashcan.png" id="1_0rtyu"]
+[ext_resource type="Script" path="res://objects/Resources/ResourceNode.gd" id="1_c7il4"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gjd2x"]
+radius = 33.0
+height = 92.0
+
+[node name="ResourceNode_trashcan" type="StaticBody2D"]
+script = ExtResource("1_c7il4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_gjd2x")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0rtyu")

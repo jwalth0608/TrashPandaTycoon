@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3sa3vi18nhcx"]
+
+[ext_resource type="Texture2D" uid="uid://ckl1vkgkkbfjd" path="res://sprites/bananapeel.png" id="1_epsrq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pu71o"]
+
+[node name="Area2D" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_pu71o")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(9.53674e-07, -9.53674e-07)
+scale = Vector2(0.04125, 0.0536751)
+texture = ExtResource("1_epsrq")
